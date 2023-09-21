@@ -1,0 +1,69 @@
+body {
+  background-color: #c60000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+p, h1, a {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  animation-name: opacity-anim;
+  animation-duration: 1s;
+  animation-delay: 0.25s;
+  animation-fill-mode:backwards
+}
+
+body > * {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+a {
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  background-color: #00000033;
+}
+
+.logo {
+  animation-name: fly-in-anim;
+  animation-duration: 1.25s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes opacity-anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fly-in-anim {
+  from {
+    margin-top: -125px;
+    margin-bottom: 125px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 1;
+  }
+}
