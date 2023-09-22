@@ -1,5 +1,5 @@
 body {
-  background-color: #c60000;
+  background-color: #a71c1c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,15 +7,29 @@ body {
   margin-top: 50px;
 }
 
-p, h1, a {
+@font-face {
+  font-family: 'Huxley Vertical';
+  src: url('./assets/fonts/Huxley\ Vertical\ Regular.otf');
+}
+
+h1 {
+  font-family: 'Huxley Vertical';
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+p, a {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p, h1, a {
   color: white;
   text-decoration: none;
   letter-spacing: 0.5px;
   margin-top: 10px;
   animation-name: opacity-anim;
   animation-duration: 1s;
-  animation-delay: 0.25s;
   animation-fill-mode:backwards
 }
 
@@ -23,6 +37,11 @@ body > * {
   width: 95%;
   max-width: 500px;
   text-align: center;
+}
+
+hr {
+  width: 50%;
+  margin-top: 25px;
 }
 
 a {
